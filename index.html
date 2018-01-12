@@ -1,6 +1,15 @@
 ---
 layout: default
 hello: "Hello World"
+skils:
+ - java
+ - javascript
+ - angular
+ - ionic
 ---
 
 <h1>{{page.hello}}</h1>
+
+{% for skil in page.skils %}
+  <h2>{{skil}}</h2>
+{% endfor %}
